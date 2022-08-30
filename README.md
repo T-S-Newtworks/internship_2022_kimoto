@@ -10,11 +10,11 @@
 <img src="https://img.shields.io/badge/作成者-kimoto, ishidou-ff69b4.svg?style=for-the-badge?style=for-the-badge"/>
 </div>
 
-相楽さん岩淵さんここに感想を一言お願いします！！！
+緊張したと思いますが、よく頑張り抜きました！就活するにしても、進学するにしても陰ながら応援しているので、頑張ってください！
 
-[kimoto 作成ページはこちら](https://github.com/T-S-Newtworks "Kimoto'sWebPage")
+[kimoto 作成ページはこちら](https://t-s-newtworks.github.io/internship_2022_kimoto/blog/sample.html "Kimoto'sWebPage")
 
-[ishidou 作成ページはこちら](https://github.com/T-S-Newtworks "Ishido'sWebPage")
+[ishidou 作成ページはこちら](https://t-s-newtworks.github.io/internship_2022_ishidou/blog/sample.html "Ishido'sWebPage")
 
 
 
