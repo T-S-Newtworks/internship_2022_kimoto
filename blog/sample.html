@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <link rel="stylesheet" href="../blog/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
+    <!-- colorbox core CSS -->
+    <link rel="stylesheet" href="assets/dist/css/colorbox.css" />
+    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+      <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+      <script>
+          $(function(){
+              let $icesL = $(".stageL .ice");
+              let $icesR = $(".stageR .ice");
+              
+              iceGaDetekuru($icesL);
+              iceGaDetekuru($icesR);
+  
+              setTimeout(function() {
+                  $(".stageR").addClass("open");
+                  $(".stageL").addClass("open");
+              }, 6000)
+  
+              setTimeout(function() {
+                  $(".stage").addClass("fade");
+              }, 6500)
+  
+              setTimeout(function() {
+                  $(".stage").addClass("hide");
+              }, 7000)
+  
+          });
+  
+          function iceGaDetekuru($ices) {
+              var interval = 0;
+              $($ices.get().reverse()).each(function(index){
+                  let $ice = $(this);
+                  interval += 100;
+                  setTimeout(function() {
+                      $ice.removeClass("hide");
+                  }, (interval))
+              });
+          }
+      </script>
+    
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/dist/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="assets/dist/js/script1.js"></script>
+
+  </head>
+  <body>
+    
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">インターンシップ課題</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">好きなアイスランキング</a>
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded haukei ">
+    <div class="text-center px-0">
+      <h1 class="title1 display-4 fst-italic">おいしいものにっき</h1>
+    </div>
+  </div>
+
+
+  <div class="row g-5 red">
+    <!-- <div class="col-md-4 order-md-2">
+      <div class="position-sticky" style="top: 2rem;">
+
+        <div class="p-4">
+          <h4 class="fst-italic">ページ内のアンカーリンク</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#sect01">1位スーパーカップ</a></li>
+            <li><a href="#sect02">２位papico</a></li>
+            <li><a href="#sect03">３位雪見だいふく</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </div> -->
+  
+    <div class="col-md-12 order-md-1">
+
+      <section class="blog-post">
+        <div class="p-4">
+          <ol class="d-flex flex-row justify-content-evenly list-unstyled ranking mb-0">
+            <li><a href="#sect01"><img src="../assets/img/No1.png"> スーパーカップ</a></li>
+            <li><a href="#sect02"><img src="../assets/img/No2.png">papico</a></li>
+            <li><a href="#sect03"><img src="../assets/img/No3.png">雪見だいふく</a></li>
+          </ol>
+        </div>
+
+        <hr>
+
+        <section>
+        <!-- No1 -->
+        <h2 class="title2" id="sect01"><img src="../assets/img/No1.png"><span>スーパーカップ</span></h2>
+        <img src="../assets/img/su-pa-kappu1.jpg"><br>
+        <p class="mt-3">第１位はスーパーカップです。
+          期間限定で新しいフレーバーが出たり、少し贅沢な気分にしてくれるものもあり種類が豊富です。
+          季節のフレーバーは約２か月ごとに発売されています。
+        </p>
+        </section>
+
+        <section class="mt-5">
+
+        <h2 class="title2" id="sect02"><img src="../assets/img/No2.png"><span>パピコ</span></h2>
+        <img src="../assets/img/papico1.jpg">
+
+        <!-- No2 -->
+        <p class="mt-3">第２位はpapicoです。
+          明るいイメージの語感から‵パピコ′と名前がつけられました。
+          昔は今のなめらか食感とは違い、ガリガリした食感だったそうです。
+        </p>
+      </section>
+
+      <section class="mt-5">
+        <!-- No3 -->
+        <h2 class="title2" id="sect03"><img src="../assets/img/No3.png"><span>ゆきみだいふく</span></h2>
+        <!-- 湯気あり -->
+        <div class="yugeImage">
+          <img src="../assets/img/yukimidaihuku.jpg">
+
+          <div class="steam-box">
+              <p class="steam-01">
+                  <img src="../assets/SVG/yuge01.svg" alt="">
+              </p>
+              <p class="steam-02">
+                  <img src="../assets/SVG/yuge01.svg" alt="">
+              </p>
+          </div>    
+        </div>
+      <!-- 湯気あり -->
+
+      <!-- <img src="../assets/img/yukimidaihuku.jpg"> -->
+        <p class="mt-3">第３位は雪見だいふくです。<br>マシュマロでアイスを包んだ“わたぼうし”という商品から進化し、今の雪見だいふくが生まれました。<br>フォークのデザインには３パターンに加えて、レアデザインがあります。</p>
+      <h3 class="title3 mb-3">ごとうちアレンジレシピ</h3>
+      <div>
+        <ul class="yukimu-list text-center">
+          <li class="yukimu-list-item">
+            <img src="../assets/img/ibaraki.png">
+            <p>甘納豆雪見だいふく</p>
+          </li>
+          <li class="yukimu-list-item">
+            <img src="../assets/img/totigi.png">
+            <p>生ゆば雪見</p>
+          </li>
+          <li class="yukimu-list-item">
+            <img src="../assets/img/mie.png">
+            <p>志摩の輝くパール雪見</p>
+          </li>
+          <li class="yukimu-list-item">
+            <img src="../assets/img/kyouto.png">
+            <p>そばぼうろの雪見サンド</p>
+          </li>
+        </ul>
+      </div>
+      <div class="btn text-center">
+        <a href="https://www.lotte.co.jp/products/brand/yukimi/gotouchi_recipe/"> <p>各レシピの詳細はこちらから</p></a>
+      </div>
+      </section>
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="stage">
+    <div class="stageInner">
+        <div class="stageL">
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+        </div>
+        <div class="stageR">
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice005"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice001"></div>
+            <div class="ice hide ice002"></div>
+            <div class="ice hide ice003"></div>
+            <div class="ice hide ice004"></div>
+            <div class="ice hide ice005"></div>
+        </div>
+    </div>
+</div>
+
+
+</main>
+
+<footer class="blog-footer">
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  font-family: "HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif";
+  background-color: #fffff0;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.yukimu-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.yukimu-list-item {
+  flex-direction: row;
+  margin-right: .5rem;
+}
+
+.yukimu-list-item:last-child {
+  margin-right: 0;
+}
+
+.yugeImage {
+    overflow: hidden;
+    position: relative;
+}
+.steam-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  @keyframes steam-move-01 {
+    0% {
+      filter: blur(12px);
+      transform: scale(0.8, 0.8) rotateY(0deg);
+      opacity: 0;
+      bottom: -1300px;
+    }
+    6% {
+      opacity: 0.15;
+    }
+    33% {
+      transform: scale(0.9, 1.1) rotateY(30deg);
+      opacity: 0.35;
+    }
+    66% {
+      transform: scaleY(1, 0.8) rotateY(4deg);
+    }
+    100% {
+      filter: blur(18px);
+      transform: scaleY(1.5, 1.3) rotateY(50deg);
+      opacity: 0;
+      bottom: 0;
+    }
+  }
+
+  .steam-01 {
+    left: calc(50% - 350px);
+    -webkit-animation: steam-move-01 20s infinite linear;
+    animation: steam-move-01 20s infinite linear;
+  }
+
+  .steam-02 {
+    left: calc(50% - 350px);
+    -webkit-animation: steam-move-01 20s infinite linear;
+    animation: steam-move-01 20s infinite linear;
+  }
