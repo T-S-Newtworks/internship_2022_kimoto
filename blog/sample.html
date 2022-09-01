@@ -6,10 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Blog Template · Bootstrap v5.0</title>
+    <title>好きなアイスランキング</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
     <link rel="stylesheet" href="../blog/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
@@ -85,11 +86,11 @@
     
 <div class="container">
   <header class="blog-header py-3">
-    <div class="row flex-nowrap align-items-center">
-      <div class="col-4 pt-1">
+    <div class="row">
+      <div class="col-12 col-md-4 text-center text-md-start">
         <a class="link-secondary" href="#">インターンシップ課題</a>
       </div>
-      <div class="col-4 text-center">
+      <div class="col-12 col-md-6 text-center text-md-start pt-1 pt-md-0">
         <a class="blog-header-logo text-dark" href="#">好きなアイスランキング</a>
       </div>
     </div>
@@ -98,37 +99,22 @@
 </div>
 
 <main class="container">
-  <div class="p-4 p-md-5 mb-4 rounded haukei ">
+  <div class="p-4 p-md-5 mb-4 rounded name">
     <div class="text-center px-0">
-      <h1 class="title1 display-4 fst-italic">おいしいものにっき</h1>
+      <h1 class="title1 display-1 fst-italic">おいしいものにっき</h1>
     </div>
   </div>
 
 
   <div class="row g-5 red">
-    <!-- <div class="col-md-4 order-md-2">
-      <div class="position-sticky" style="top: 2rem;">
-
-        <div class="p-4">
-          <h4 class="fst-italic">ページ内のアンカーリンク</h4>
-          <ol class="list-unstyled mb-0">
-            <li><a href="#sect01">1位スーパーカップ</a></li>
-            <li><a href="#sect02">２位papico</a></li>
-            <li><a href="#sect03">３位雪見だいふく</a></li>
-          </ol>
-        </div>
-
-      </div>
-    </div> -->
-  
     <div class="col-md-12 order-md-1">
-
       <section class="blog-post">
+
         <div class="p-4">
-          <ol class="d-flex flex-row justify-content-evenly list-unstyled ranking mb-0">
-            <li><a href="#sect01"><img src="../assets/img/No1.png"> スーパーカップ</a></li>
-            <li><a href="#sect02"><img src="../assets/img/No2.png">papico</a></li>
-            <li><a href="#sect03"><img src="../assets/img/No3.png">雪見だいふく</a></li>
+          <ol class="row text-center list-unstyled ranking mb-0">
+            <li class="col-4"><a href="#sect01"><img src="../assets/img/No1.png"> スーパーカップ</a></li>
+            <li class="col-4"><img src="../assets/img/No2.png">papico</a></li>
+            <li class="col-4"><img src="../assets/img/No3.png">雪見だいふく</a></li>
           </ol>
         </div>
 
@@ -136,7 +122,7 @@
 
         <section>
         <!-- No1 -->
-        <h2 class="title2" id="sect01"><img src="../assets/img/No1.png"><span>スーパーカップ</span></h2>
+        <h2 class="title2" id="sect01"><img src="../assets/img/No1.png"><span class="display-5">スーパーカップ</span></h2>
         <img src="../assets/img/su-pa-kappu1.jpg"><br>
         <p class="mt-3">第１位はスーパーカップです。
           期間限定で新しいフレーバーが出たり、少し贅沢な気分にしてくれるものもあり種類が豊富です。
@@ -146,7 +132,7 @@
 
         <section class="mt-5">
 
-        <h2 class="title2" id="sect02"><img src="../assets/img/No2.png"><span>パピコ</span></h2>
+        <h2 class="title2" id="sect02"><img src="../assets/img/No2.png"><span class="display-5">パピコ</span></h2>
         <img src="../assets/img/papico1.jpg">
 
         <!-- No2 -->
@@ -158,7 +144,7 @@
 
       <section class="mt-5">
         <!-- No3 -->
-        <h2 class="title2" id="sect03"><img src="../assets/img/No3.png"><span>ゆきみだいふく</span></h2>
+        <h2 class="title2" id="sect03"><img src="../assets/img/No3.png"><span class="display-5">ゆきみだいふく</span></h2>
         <!-- 湯気あり -->
         <div class="yugeImage">
           <img src="../assets/img/yukimidaihuku.jpg">
@@ -197,12 +183,13 @@
           </li>
         </ul>
       </div>
-      <div class="btn text-center">
-        <a href="https://www.lotte.co.jp/products/brand/yukimi/gotouchi_recipe/"> <p>各レシピの詳細はこちらから</p></a>
-      </div>
-      </section>
+      
+    </section>
 
 
+    <div class="btn-link text-center">
+      <a href="https://www.lotte.co.jp/products/brand/yukimi/gotouchi_recipe/"><p>各レシピの詳細はこちらから</p></a>
+    </div>
 
 
     </div>
